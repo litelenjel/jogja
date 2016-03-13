@@ -7,6 +7,17 @@ function readmore() {
 }
 
 
+/*thumnail mansory */
+(function( $ ) {
+
+	var $container = $('.masonry-container');
+	$container.imagesLoaded( function () {
+		$container.masonry({
+			columnWidth: '.item',
+			itemSelector: '.item'
+		});
+	})
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
