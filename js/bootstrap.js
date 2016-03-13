@@ -1,3 +1,12 @@
+function readmore() {
+ var tempt= document.getElementById("readmore").style.display; 
+ if (tempt=="none")
+ 	document.getElementById("readmore").style.display="block";
+ else
+ 	document.getElementById("readmore").style.display="none";
+}
+
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.

@@ -4,7 +4,7 @@
   <title>Jogja Travel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap.css">
   <script src="../../../jquery-1.12.1.min.js"></script>
   <script src="bootstrap.js"></script>
   <style>
@@ -50,48 +50,58 @@
 </nav>
 
 <div>
+
 <div class="container">
   <div class="jumbotron">
     <h1>Hotel & Penginapan</h1>
     <p>Menampilkan banyak pilihan tentang tempat menginap di sekitar Jogja</p> 
   </div>
   
-<div class="article">  
+<div class="container-fluid">  
   	<div class="row">
-  	  <div class="col-sm-4">
+  	  
+  	  	<div class="col-sm-4" class="article">
       <h3>Melia Purosani Hotel</h3>
       <img src="image/melia.jpg" width="350" height="200" />
+      <br/>
       <p>Dengan lokasi yang strategis, Melia Purosani merupakan hotel yang patut diperhitungkan bagi wisatawan.</p> 
+      <div style="display:none;" id="readmore">
       <p>Terutama bagi wisatawan yang memiliki anak kecil, mereka dapat menyenangkan anaknya karena adanya kolam renang bagi anak kecil.</p>
       <p>Fasilitas menu breakfast yang beraneka ragam baik masakan Indonesia maupun mancanegara dapat membantu anda untuk beraktivitas sepanjang hari.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mi sem, consequat ut lectus suscipit, pulvinar molestie nibh. Duis in cursus risus. Ut sit amet massa vitae nunc sagittis faucibus.</P>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mi sem, consequat ut lectus suscipit, pulvinar molestie nibh. Duis in cursus risus. Ut sit amet massa vitae nunc sagittis faucibus.</p>
       <p>Duis in lacinia dui. Donec quis sem id orci ornare dignissim tincidunt quis ligula. Aenean ligula orci, fringilla nec risus sed, cursus rhoncus nisl. Nulla eu dignissim nulla, a fringilla elit.</p>
-    </div>
-    
-    <div class="col-sm-4">
+      </div> <button onclick="readmore()">read more</button>
+      	</div>   		
+
+     
+    	<div class="col-sm-4">
       <h3>Inna Garuda Malioboro</h3>
       <img src="image/inna garuda.jpg" width="350" height="200" />
+      <br/>
       <p>Hotel ini memiliki lokasi yang strategis, dekat dengan pusat keramaian jogjakarta.</p>
       <p>menyenangkan sekali dapat menginap disini. </p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mi sem, consequat ut lectus suscipit, pulvinar molestie nibh. Duis in cursus risus.</p>
       <p>Ut sit amet massa vitae nunc sagittis faucibus. Duis in lacinia dui. Donec quis sem id orci ornare dignissim tincidunt quis ligula. Aenean ligula orci, fringilla nec risus sed, cursus rhoncus nisl.</p>
       <p>Nulla eu dignissim nulla, a fringilla elit.</p>
-    </div>
-    
-    <div class="col-sm-4">
+    	</div>
+        
+    	<div class="col-sm-4">
       <h3>The Phoenix Hotel</h3> 
       <img src="image/phoenix.jpg" width="350" height="200" />        
+      <br/>
       <p>Stay 3 malam di hotel ini dan serasa tidur di rumah saudara saja. sangat nyaman dan homy.</p>
       <p>Sangat sesuai dengan kota jogja yang memang masih sangat kental dengan tradisi. Justru memberi rasa tenang dibandingkan tidur di hotel modern (personal taste).</p>
       <p>Untuk wisatawan yang ingin tinggal dengan nyaman dan mewah tapi tetap merasakan suasana tradisional Phoenix sangat sesuai. Dan plus poin yang untuk orang Indonesia rasakan, disini menyediakan guling di kamarnya.</p> 
       <p>Suatu amenity yang belum pernah ditemui di hotel2 lain. Hal kecil memang, tapi ini semacam penyambung kangen dengan kasur di rumah. Soal makanan apalagi, menu lokal selalu ada, 3 x breakfast 3x juga makan gudeg yang berbeda2. enak tanpa harus keliling jogja.</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-  
- 	</div>
+    	</div>
+  	
+  	</div>
+</div>
+
 </div>
 </div>
-</div>
+
 
 
 
