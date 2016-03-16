@@ -4,20 +4,24 @@
 	text-align:justify;
 }
 
-/* maps */
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.big {
+	font-size:medium;
 }
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:80%;
-    width:80%;
-    position:relative;
-    display:block;
+
+.p {
+  text-align: center;
+}
+
+#map-canvas {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+}
+
+#map-container{
+    height: 500px;
+    width: 500px;
 }
 
 /*!
