@@ -4,7 +4,7 @@
   <title>Jogja Travel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap.css">
    <script src="../../../jquery-1.12.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <style>
@@ -24,10 +24,11 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav id="navbar-main" class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
@@ -37,7 +38,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li>
-        <li li class="active"><a href="wisata.html">Wisata</a></li>
+        <li class="active"><a href="wisata.html">Wisata</a></li>
         <li><a href="hotel.html">Hotel</a></li>
         <li><a href="kuliner.html">Kuliner</a></li>
         <li><a href="contact.html">Contact Us</a></li>

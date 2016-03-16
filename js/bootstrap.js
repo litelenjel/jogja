@@ -1,3 +1,4 @@
+/* readmore */
 function readmore() {
  var tempt= document.getElementById("readmore").style.display; 
  if (tempt=="none")
@@ -25,7 +26,27 @@ $('.read-more-hide').on('click', function(e) {
   e.preventDefault();
 });
 
-/*nun*/
+/* sticky menu */
+/*! Main */
+jQuery(document).ready(function($) {
+  
+    // Fixa navbar ao ultrapassa-lo
+    var navbar = $('#navbar-main'),
+    		distance = navbar.offset().top,
+        $window = $(window);
+
+    $window.scroll(function() {
+        if ($window.scrollTop() >= distance) {
+            navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+          	$("body").css("padding-top", "70px");
+        } else {
+            navbar.removeClass('navbar-fixed-top');
+            $("body").css("padding-top", "0px");
+        }
+    });
+});
+
+
 
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
