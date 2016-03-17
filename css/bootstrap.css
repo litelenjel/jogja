@@ -24,13 +24,21 @@
     width: 500px;
 }
 
+#map {
+	padding-top:20px;
+}
+
 #sosmed {
 	padding-bottom:20px;
 }
 
 #thumbnail {
-	background-image:url('../../../../../Anggia Nunik/bg/21802-wood-texture-1920x1080-photography-wallpaper.jpg');
+	background-image:url('../image/texture-leaves-yellow-green_2803514.jpg');
+	padding-bottom:20px;
+	padding-top:20px;
 }
+
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1614,7 +1622,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
+  }
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -1628,6 +1636,7 @@ pre code {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+    padding-top: 20px;
   }
 }
 .container-fluid {
