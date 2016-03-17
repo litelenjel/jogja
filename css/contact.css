@@ -1,9 +1,48 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+﻿/*formulir login */
 
-html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
-  background-size: cover;
-  height:100%;
+#form-login {
+	background-color:#3C763D;
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position:relative;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
 }
+
+#button-yellow {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #F8C300;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-yellow:hover{
+	background-color: rgba(0,0,0,0);
+	color: #F8C300;
+}
+
+
+/* form contact us*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 #feedback-page{
 	text-align:center;
@@ -16,7 +55,7 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 }
 
 #form-div {
-	background-color:rgba(72,72,72,0.4);
+	background-color:rgba(248,195,0,1);
 	padding-left:35px;
 	padding-right:35px;
 	padding-top:35px;
