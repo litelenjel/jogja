@@ -1,13 +1,84 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Untitled 1</title>
-</head>
+  <title>Jogja Travel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+   <script src="../../../jquery-1.12.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a yellow background color and some padding to the footer */
+    footer {
+      background-color: #F8C300;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
 
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+ 
+    
+
+  </style>
+</head>
 <body>
 
-</body>
+<nav id="navbar-main" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Jogja Traveler</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="wisata.html">Wisata</a></li>
+        <li><a href="hotel.html">Hotel</a></li>
+        <li><a href="kuliner.html">Kuliner</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="form.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container text-center">
+	<h2 style="color:#002A00"><b>Follow Us</b></h2>
+	<div id="sosmed">
+		<a href="#"><img src="image/twitter.png" width="40px" height="40px" /></a>
+		<a href="#"><img src="image/facebook.png" width="40px" height="40px" /></a>
+		<a href="#"><img src="image/yutup.png" width="40px" height="40px" /></a>
+	</div>
+</div>
 
+
+<footer class="container-fluid text-center">
+  <p>&copy; 2016 <a href="index.html">Jogja Traveler</a> | Designed by <a href="http://www.anggianunik.com">Anggia Nunik</a></p>
+</footer>
+
+
+</body>
 </html>
+
