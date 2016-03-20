@@ -38,7 +38,14 @@
 	padding-top:20px;
 }
 
-
+/*read more */
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display:inherit;
+    width:auto;
+}
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.

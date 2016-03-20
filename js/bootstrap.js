@@ -1,30 +1,42 @@
 /* readmore */
-function readmore() {
- var tempt= document.getElementById("readmore").style.display; 
- if (tempt=="none")
- 	document.getElementById("readmore").style.display="block";
- else
- 	document.getElementById("readmore").style.display="none";
-}
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 200;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Show More >";
+    var lesstext = "Show Less ";
+    
+    
 
-// Hide the extra content initially, using JS so that if JS is disabled, no problemo:
-$('.read-more-content').addClass('hide')
-$('.read-more-show, .read-more-hide').removeClass('hide')
-
-// Set up the toggle effect:
-$('.read-more-show').on('click', function(e) {
-  $(this).next('.read-more-content').removeClass('hide');
-  $(this).addClass('hide');
-  e.preventDefault();
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
 });
 
-// Changes contributed by @diego-rzg
-$('.read-more-hide').on('click', function(e) {
-  var p = $(this).parent('.read-more-content');
-  p.addClass('hide');
-  p.prev('.read-more-show').removeClass('hide'); // Hide only the preceding "Read More"
-  e.preventDefault();
-});
 
 /* sticky menu */
 /*! Main */
