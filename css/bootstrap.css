@@ -1,7 +1,7 @@
 ﻿.article {
-	float:left;
-	padding:1%;
 	text-align:justify;
+	padding:1%;
+	float:left;
 }
 
 .big {
@@ -1187,7 +1187,7 @@ img {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  display: block;
+  display:-webkit-inline-box;;
   max-width: 100%;
   height: auto;
 }
